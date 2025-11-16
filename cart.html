@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Snapy Store</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo"><a href="index.html">Snapy Store</a></div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html" class="active">Cart</a>
+        </nav>
+    </header>
+
+    <!-- CART -->
+    <section class="cart-section">
+        <h1>Your Cart</h1>
+
+        <div class="cart-layout">
+
+            <!-- Left Side – Cart Items -->
+            <div class="cart-items">
+
+                <!-- Item 1 -->
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Product">
+                    <div class="item-info">
+                        <h3>StrideX UltraRun Shoes</h3>
+                        <p>Size: 9 UK</p>
+                        <p>Color: Black</p>
+
+                        <div class="qty-box">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+
+                        <a href="#" class="remove">Remove</a>
+                    </div>
+
+                    <div class="item-price">₹4,999</div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Product">
+                    <div class="item-info">
+                        <h3>StrideX TechGrip Sneakers</h3>
+                        <p>Size: 8 UK</p>
+                        <p>Color: White</p>
+
+                        <div class="qty-box">
+                            <button>-</button>
+                            <input type="text" value="2">
+                            <button>+</button>
+                        </div>
+
+                        <a href="#" class="remove">Remove</a>
+                    </div>
+
+                    <div class="item-price">₹7,498</div>
+                </div>
+
+            </div>
+
+            <!-- Right Side – Summary -->
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>₹12,497</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>₹149</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span>₹12,646</span>
+                </div>
+
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>StrideX blends comfort, performance & innovation to deliver next-gen footwear for every journey.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Track Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: support@stridex.com</li>
+                    <li>Phone: +91 98765 43210</li>
+                    <li>Bengaluru, India</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">© 2025 StrideX. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
