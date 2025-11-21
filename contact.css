@@ -1,53 +1,71 @@
-/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-
 body {
-    background: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
     color: #222;
+    scroll-behavior: smooth;
 }
-
-/* ===== NAVBAR ===== */
 .navbar {
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 60px;
-    background: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    padding: 15px 60px;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
-    font-size: 28px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;            
+    letter-spacing: 1px;
+}
+.logo span {
+    color: #00bfff;         
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #000;
+    color: #000;            
     font-weight: 500;
     position: relative;
+    padding-bottom: 4px;
+    transition: 0.3s ease;
+    cursor: pointer;        
 }
 
-.nav-links a:hover,
-.nav-links a.active {
-    color: #00bfff;
-    text-decoration: underline;
+/* Underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00bfff;
+    transition: width 0.3s ease;
 }
 
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
 /* ===== CONTACT HERO ===== */
 .contact-hero {
     text-align: center;
