@@ -12,6 +12,7 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Navigation Bar */
 .navbar {
     position: fixed;
     top: 0;
@@ -21,7 +22,6 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    /* changed from black → white */
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
 
@@ -33,11 +33,11 @@ body {
 .logo {
     font-size: 26px;
     font-weight: bold;
-    color: #000;            /* black text */
+    color: #000;            
     letter-spacing: 1px;
 }
 .logo span {
-    color: #00bfff;         /* keeps brand highlight */
+    color: #00bfff;        
 }
 
 .nav-links {
@@ -48,15 +48,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #000;            /* black menu items */
+    color: #000;          
     font-weight: 500;
     position: relative;
     padding-bottom: 4px;
     transition: 0.3s ease;
-    cursor: pointer;        /* pointer on hover */
+    cursor: pointer;      
 }
 
-/* Underline animation */
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -73,7 +72,7 @@ body {
     width: 100%;
 }
 
-/* ===== HERO SECTION ===== */
+/* Hero Section */
 .hero {
     background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=80'); 
     background-size: cover;
@@ -116,7 +115,6 @@ body {
     opacity: 0.9;
 }
 
-/* ===== BUTTON ===== */
 .btn {
     background-color: #00bfff;
     color: #fff;
@@ -132,7 +130,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* ===== FEATURED PRODUCTS ===== */
+/*  FEATURED PRODUCTS  */
 .products-section {
     padding: 60px;
     text-align: center;
@@ -155,15 +153,23 @@ body {
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+}
+.product-card img{
+    width: 100%;
+    height: 80%;
+    border-radius: 12px;
 }
 
 .product-card:hover {
     transform: translateY(-10px);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer {
     background-color: #0d0d0d;
     color: #ccc;
@@ -250,7 +256,7 @@ body {
 }
 
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
